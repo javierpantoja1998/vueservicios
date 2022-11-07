@@ -10,10 +10,11 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
+import Global from './../Global'
 //Aqui podemos declarar variables para usarlas
 //dentro de cualquier metodo del componente
-var urlApi = "https://apicochespaco.azurewebsites.net/";
+// var urlApi = "https://apicochespaco.azurewebsites.net/";
 export default {
     name:"CochesComponente",
     data(){
@@ -27,7 +28,7 @@ export default {
       //Vamos a cargar los coches
       loadCoches(){
         var request = "/webresources/coches";
-        var url = urlApi + request;
+        var url = Global.urlCoches + request;
         axios.get(url).then(res=>{
           this.coches = res.data
         });

@@ -1,5 +1,6 @@
 var Global = {
-    urlCoches: "value"
+    urlCoches: "https://apicochespaco.azurewebsites.net/",
+    urlEmpleados: "https://apiempleadosfullstack.azurewebsites.net/"
 }
 
 export default Global;

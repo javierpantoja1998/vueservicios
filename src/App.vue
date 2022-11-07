@@ -1,14 +1,21 @@
 <template>
-  <CochesComponente/>
+  <!-- <CochesComponente/> -->
+  <!-- <EmpleadosDetalle/> -->
+  <MenuRutas/>
+  <router-view></router-view>
 </template>
 
 <script>
-import CochesComponente from './components/CochesComponente.vue';
+// import EmpleadosDetalle from './components/EmpleadosDetalle.vue'
+import MenuRutas from './components/MenuRutas';
+// import CochesComponente from './components/CochesComponente.vue';
 
 export default {
   name: 'App',
   components: {
-    CochesComponente
+    // EmpleadosDetalle
+    // CochesComponente
+    MenuRutas
   }
 }
 </script>
